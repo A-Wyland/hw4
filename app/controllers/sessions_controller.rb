@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
         flash["notice"] = "Incorrect Username or Password"
         redirect_to "/login"
       end
-  end
+    end
 
   #below for logging out a user
   def destroy
@@ -22,5 +22,6 @@ class SessionsController < ApplicationController
     flash["notice"] = "Goodbye! Come again :)"
     redirect_to "/login"
   end
+end
 end
   
